@@ -1,0 +1,72 @@
+.comment-wrapper
+    display: flex
+    gap: 12px
+    background-color: var(--white)
+    padding: 24px
+
+.body-wrapper
+    flex: 1
+    display: flex
+    flex-direction: column
+    gap: 12px
+
+.reply-wrapper
+    display: flex
+    gap: 12px
+    background-color: var(--white)
+    padding: 24px
+    position: relative
+    &::before
+        position: absolute
+        top: 0
+        left: -30px
+        bottom: 0
+        width: 3px
+        content: ''
+        background-color: var(--light-gray)
+
+.reactions-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: var(--very-light-gray)
+    gap: 16px
+    padding: 10px
+    border-radius: 4px
+    p
+        color: var(--moderate-blue)
+        font-weight: 700
+
+.header-wrapper
+    display: flex
+    margin-left: 6px
+
+.left-header
+    display: flex
+    align-items: center
+    gap: 14px
+    img
+        width: 30px
+    .username
+        font-weight: 700
+        color: var(--moderate-blue)
+    .you
+        color: var(--white)
+        background-color: var(--moderate-blue)
+        padding: 2px 3px
+        border-radius: 4px
+    .created-at
+        color: var(--grayish-blue)
+
+.right-header
+    margin-left: auto
+    display: flex
+    gap: 14px
+
+.content-wrapper
+    margin-left: 6px
+    color: var(--grayish-blue)
+    .username
+        font-weight: 700
+        font-size: 13px
+        color: var(--moderate-blue)
